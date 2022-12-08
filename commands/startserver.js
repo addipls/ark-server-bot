@@ -8,7 +8,7 @@ module.exports = {
 		.setDescription('Launches the ARK server'),
 	async execute(interaction) {
         await interaction.deferReply();
-        let response = runCommand(Constants.START_SERVER_BASIC)
+        let response = runCommand(Constants.get('START_SERVER_BASIC'))
         console.log(response);
 		interaction.editReply(
             {
