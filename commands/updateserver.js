@@ -10,7 +10,7 @@ module.exports = {
         await interaction.deferReply();
         let response = runCommand(Constants.get('UPDATE_SERVER'));
         console.log(response);
-		interaction.editReply(
+		await interaction.editReply(
             {
                 content: response,
                 ephemeral: false,

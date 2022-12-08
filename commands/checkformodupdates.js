@@ -9,7 +9,7 @@ module.exports = {
         await interaction.deferReply();
         let response = runCommand(Constants.get('CHECK_FOR_MOD_UPDATES'));
         console.log(response);
-		interaction.editReply(
+		await interaction.editReply(
             {
                 content: response,
                 ephemeral: false,
