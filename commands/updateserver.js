@@ -5,7 +5,7 @@ const { Constants } = require('../util/Constants.js');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('updateserver')
-		.setDescription('Updates the ARK server'),
+		.setDescription('Updates the ARK server and associated mods'),
 	async execute(interaction) {
         await interaction.deferReply();
         let response = runCommand(Constants.get('UPDATE_SERVER'));
