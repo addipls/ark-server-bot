@@ -10,6 +10,7 @@ module.exports = {
             ['CHECK_FOR_UPDATES', 'arkmanager checkupdate @main'],
             ['CHECK_FOR_MOD_UPDATES', 'arkmanager checkmodupdate @main'],
             ['LIST_MODS', 'arkmanager list-mods @main'],
+            ['STATUS', 'arkmanager status @main'],
         ]
     ),
 }
