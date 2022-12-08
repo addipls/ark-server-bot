@@ -1,0 +1,23 @@
+{
+  "name": "ark-server-bot",
+  "version": "1.0.0",
+  "description": "A small Discord bot that controls an installation of ark-server-tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addipls/ark-server-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addipls/ark-server-bot/issues"
+  },
+  "homepage": "https://github.com/addipls/ark-server-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1"
+  }
+}
