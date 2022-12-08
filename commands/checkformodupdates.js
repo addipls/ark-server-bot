@@ -1,3 +1,4 @@
+const { execSync } = require('child_process');
 const { SlashCommandBuilder } = require('discord.js');
 const { runCommand } = require('../util/SystemCommandHandler.js');
 const { Constants } = require('../util/Constants.js');
