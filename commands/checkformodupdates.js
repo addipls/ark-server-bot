@@ -10,7 +10,7 @@ module.exports = {
         await interaction.deferReply();
         let response = runCommand(Constants.get('CHECK_FOR_MOD_UPDATES'));
         console.log(response);
-        await interaction.followUp('Using this instead of editReply');
+        await interaction.followUp(response);
         /*
 		await interaction.editReply(
             {
