@@ -1,6 +1,6 @@
 module.exports = {
     runCommand: function(command){
-        var exec = require('child_process').exec;
+        var execSync = require('child_process').execSync;
         var response = execSync(command).toString('utf-8');
         return response;
     }
