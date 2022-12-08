@@ -6,9 +6,10 @@ module.exports = {
 		.setName('checkformodupdates')
 		.setDescription('Checks if any mods need to be updated'),
 	async execute(interaction) {
+        await interaction.deferReply();
         let response = runCommand(Constants.get('CHECK_FOR_MOD_UPDATES'));
         console.log(response);
-		interaction.reply(
+		interaction.editReply(
             {
                 content: response,
                 ephemeral: false,

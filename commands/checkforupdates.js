@@ -7,9 +7,10 @@ module.exports = {
 		.setName('checkforupdates')
 		.setDescription('Checks if an update to the Ark server is available'),
 	async execute(interaction) {
+        await interaction.deferReply();
         let response = runCommand(Constants.get('CHECK_FOR_UPDATES'));
         console.log(response);
-		interaction.reply(
+		interaction.editReply(
             {
                 content: response,
                 ephemeral: false,

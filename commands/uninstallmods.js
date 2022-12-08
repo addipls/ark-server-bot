@@ -7,9 +7,10 @@ module.exports = {
 		.setName('uninstallmods')
 		.setDescription('Uninstalls all mods from the server'),
 	async execute(interaction) {
+        await interaction.deferReply();
         let response = runCommand(Constants.get('UNINSTALL_MODS'));
         console.log(response);
-		interaction.reply(
+		interaction.editReply(
             {
                 content: response,
                 ephemeral: false,

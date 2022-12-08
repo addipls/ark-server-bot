@@ -7,9 +7,10 @@ module.exports = {
 		.setName('updateserver')
 		.setDescription('Updates the ARK server'),
 	async execute(interaction) {
+        await interaction.deferReply();
         let response = runCommand(Constants.get('UPDATE_SERVER'));
         console.log(response);
-		interaction.reply(
+		interaction.editReply(
             {
                 content: response,
                 ephemeral: false,
