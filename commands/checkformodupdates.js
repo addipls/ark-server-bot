@@ -7,17 +7,13 @@ module.exports = {
 		.setName('checkformodupdates')
 		.setDescription('Checks if an update to the Ark mods is available'),
 	async execute(interaction) {
-        await interaction.deferReply();
+        await interaction.reply("Checking for mod updates...");
         let response = runCommand(Constants.get('CHECK_FOR_MOD_UPDATES'));
         console.log(response);
-        await interaction.followUp(response);
-        /*
 		await interaction.editReply(
             {
                 content: response,
-                ephemeral: false,
             }
         );
-        */
 	},
 };
