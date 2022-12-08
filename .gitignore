@@ -1,3 +1,6 @@
+#dotenv with secrets
+.env
+
 # Logs
 logs
 *.log
