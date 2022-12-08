@@ -1,4 +1,4 @@
-module.exports = {
+    module.exports = {
     Constants: new Map(
         [
             ['START_SERVER_BASIC', 'arkmanager start @main'],
